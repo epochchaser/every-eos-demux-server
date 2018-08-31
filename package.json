@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "demux": "^1.0.5",
+    "demux-eos": "^1.1.0",
+    "nodemon": "^1.18.4"
+  },
+  "name": "every-eos-demux-server",
+  "version": "1.0.0",
+  "description": "Demux server for every-eos",
+  "main": "src/starter.js",
+  "repository": "https://github.com/epochchaser/every-eos-demux-server.git",
+  "author": "chaser <epochchaser@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "build": "babel src -d dist",
+    "serve": "node dist/index.js"
+  },
+  "devDependencies": {}
+}
