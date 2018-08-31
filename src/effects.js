@@ -1,5 +1,6 @@
+//4. Fourth call
 function logUpdate(state, payload, blockInfo, context) {
-  console.info('State updated:\n', JSON.stringify(state, null, 2))
+  //console.info('State updated:\n', JSON.stringify(state, null, 2))
 }
 
 const effects = [

@@ -1,5 +1,5 @@
 const { BaseActionWatcher } = require('demux')
-const { NodeosActionReader } = require('demux-eos') // eslint-disable-line
+const { NodeosActionReader } = require('demux-eos')
 const ObjectActionHandler = require('./ObjectActionHandler')
 const updaters = require('./updaters')
 const effects = require('./effects')
@@ -7,7 +7,7 @@ const effects = require('./effects')
 const actionHandler = new ObjectActionHandler(updaters, effects)
 
 const actionReader = new NodeosActionReader(
-  'http://mainnet.eoscalgary.io', // Thanks EOS Calgary!
+  'https://eos.greymass.com:443',
   0 // Start at most recent blocks
 )
 
